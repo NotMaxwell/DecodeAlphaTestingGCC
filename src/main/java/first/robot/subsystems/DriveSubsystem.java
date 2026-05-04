@@ -7,6 +7,8 @@ package first.robot.subsystems;
 import org.wpilib.command3.Mechanism;
 import org.wpilib.drive.DifferentialDrive;
 import first.robot.Constants.DriveConstants;
+
+import org.wpilib.hardware.motor.MotorController;
 import org.wpilib.hardware.motor.PWMSparkMax;
 import org.wpilib.hardware.rotation.Encoder;
 import org.wpilib.util.sendable.SendableRegistry;

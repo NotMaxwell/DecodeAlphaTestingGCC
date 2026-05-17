@@ -45,4 +45,19 @@ public final class Constants {
   public static final class OIConstants {
     public static final int kDriverControllerPort = 0;
   }
+
+  public static final class IntakeConstants {
+    public static final int motorID = 0;
+    public static final double intakePower = 0.5;
+    public static final double feedPower = 0.2;
+    public static final double idlePower = 0.0;
+    
+  }
+
+  public static final class IndexterConstants {
+    public static final int leftMotorId = 1;
+    public static final int rightMotorId = 2;
+    public static final double feedPower = 1.0;
+    public static final double idlePower = 0.1;
+  }
 }

@@ -9,7 +9,7 @@ public class IndexterSubsystem extends Mechanism {
     private ExpansionHubCRServo leftServo;
     private ExpansionHubCRServo rightServo;
 
-    public void IndexterSubsystem(){
+    public IndexterSubsystem(){
         rightServo = new ExpansionHubCRServo(0, Constants.IndexterConstants.rightMotorId);
         leftServo  = new ExpansionHubCRServo(0, Constants.IndexterConstants.leftMotorId);
         //make left or right servo run in reverse

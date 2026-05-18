@@ -18,7 +18,7 @@ import first.robot.Constants;
 public class IntakeSubsystem extends Mechanism {
     private ExpansionHubMotor m_intake;
 
-    public void IntakeSubsystem(){
+    public IntakeSubsystem(){
         m_intake = new ExpansionHubMotor(0, Constants.IntakeConstants.motorID);
     }
 

@@ -16,7 +16,11 @@ import org.wpilib.math.system.DCMotor;
 import first.robot.Constants;
 
 public class IntakeSubsystem extends Mechanism {
-    private ExpansionHubMotor m_intake = new ExpansionHubMotor(0, Constants.IntakeConstants.motorID);
+    private ExpansionHubMotor m_intake;
+
+    public void IntakeSubsystem(){
+        m_intake = new ExpansionHubMotor(0, Constants.IntakeConstants.motorID);
+    }
 
     public void setIntakeSpeed() {
         m_intake.setThrottle(Constants.IntakeConstants.intakePower);

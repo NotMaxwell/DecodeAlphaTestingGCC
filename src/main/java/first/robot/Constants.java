@@ -4,6 +4,13 @@
 
 package first.robot;
 
+import org.wpilib.units.VelocityUnit;
+import org.wpilib.units.measure.AngularVelocity;
+import org.wpilib.units.measure.LinearVelocity;
+import org.wpilib.units.measure.Velocity;
+
+
+
 /**
  * The Constants class provides a convenient place for teams to hold robot-wide numerical or boolean
  * constants. This class should not be used for any other purpose. All constants should be declared
@@ -59,5 +66,30 @@ public final class Constants {
     public static final int rightMotorId = 2;
     public static final double feedPower = 1.0;
     public static final double idlePower = 0.1;
+  }
+
+  public static final class LauncherSubsystem {
+    public static final int motorID = 0;
+    // Target launcher speed in revolutions per minute (RPM).
+    public static final double TARGET_VELOCITY = 1600.0;
+    public static final double IDLE_VELOCITY = 400.0;
+    public static final double MIN_VELOCITY = TARGET_VELOCITY - (TARGET_VELOCITY * 0.1);
+
+    //PID values
+    public static final double kp = 0;
+    public static final double ki = 0;
+    public static final double kd = 0;
+    // Physical / encoder configuration
+    public static final double SHOOTER_RADIUS_METERS = 0.0762; // example: 3 in = 0.0762 m
+    public static final int ENCODER_CPR = 1024; // encoder counts per motor revolution
+    public static final double GEAR_RATIO = 1.0; // motor revs per output rev
+
+    // Feedforward gains (tune these)
+    public static final double kS = 0.0;
+    public static final double kV = 0.0; // V per (rad/s)
+    public static final double kA = 0.0; // V per (rad/s^2)
+
+    public static final double MAX_VOLTAGE = 12.0;
+    public static final double TOLERANCE_RPM = 25.0; // acceptable error in RPM
   }
 }
